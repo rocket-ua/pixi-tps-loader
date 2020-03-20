@@ -1,0 +1,35 @@
+{
+  "name": "pixi-tps-loader",
+  "version": "1.0.1",
+  "description": "PIXI TexturePacker multiply sprite sheets loader",
+  "main": "src/TPSLoader.js",
+  "author": "rocket",
+  "license": "MIT",
+  "files": [
+    "src/*.js",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rocket-ua/pixi-tps-loader.git"
+  },
+  "keywords": [
+    "spriteSheets",
+    "sprite sheets",
+    "sprite sheet",
+    "multipack",
+    "TexturePacker",
+    "pixi.js",
+    "pixijs",
+    "pixi"
+  ],
+  "bugs": {
+    "url": "https://github.com/rocket-ua/pixi-tps-loader/issues"
+  },
+  "homepage": "https://github.com/rocket-ua/pixi-tps-loader#readme",
+  "devDependencies": {
+    "pixi.js": "^5.2.1"
+  }
+}
