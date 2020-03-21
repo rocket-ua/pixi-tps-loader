@@ -15,12 +15,6 @@ export default class ResourceLoader {
         }
 
         if (resource.data.meta && resource.data.meta.related_multi_packs) {
-            let options = {
-                crossOrigin: resource.crossOrigin,
-                xhrType: PIXI.LoaderResource.TYPE.JSON,
-                metadata: null,
-                parentResource: resource
-            };
             resource.data.meta.related_multi_packs.forEach((item) => {
                 let itemName = item.replace('.json', '');
                 let splittedUrl = resource.url.split('/');
@@ -29,7 +23,16 @@ export default class ResourceLoader {
                 if (this.resources[itemName] || this.resources[itemUrl]) {
                     return;
                 }
-                this.add(item.replace('.json', ''), itemUrl, options);
+
+                let options = {
+                    crossOrigin: resource.crossOrigin,
+                    xhrType: PIXI.LoaderResource.TYPE.JSON,
+                    metadata: null,
+                    parentResource: resource,
+                    name:item.replace('.json', ''),
+                    url:itemUrl
+                };
+                this.add(options);
             });
             return next();
         }
