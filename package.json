@@ -1,6 +1,6 @@
 {
   "name": "pixi-tps-loader",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "PIXI TexturePacker multiply sprite sheets loader",
   "main": "src/TPSLoader.js",
   "author": "rocket",

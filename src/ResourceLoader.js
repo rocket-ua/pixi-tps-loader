@@ -29,7 +29,7 @@ export default class ResourceLoader {
                 if (this.resources[itemName] || this.resources[itemUrl]) {
                     return;
                 }
-                PIXI.Loader.shared.add(item.replace('.json', ''), itemUrl, options);
+                this.add(item.replace('.json', ''), itemUrl, options);
             });
             return next();
         }
