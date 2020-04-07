@@ -26,7 +26,7 @@ export default class ResourceLoader {
 
                 let options = {
                     crossOrigin: resource.crossOrigin,
-                    xhrType: PIXI.LoaderResource.TYPE.JSON,
+                    xhrType: PIXI.LoaderResource.XHR_RESPONSE_TYPE.JSON,
                     metadata: null,
                     parentResource: resource,
                     name:item.replace('.json', ''),
